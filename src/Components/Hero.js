@@ -1,4 +1,4 @@
-import img from "./images/6.jpg";
+import img from "./images/profile.jpg";
 import Typed from "react-typed";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -12,16 +12,16 @@ export default function Hero() {
       <Container data-aos="zoom-in" data-aos-delay="500">
         <Row>
           <Col lg={6} className="item-center">
-            <h1>Bhushan Borole</h1>
+            <h1>Tshering Wangpo Dorji</h1>
             <br />
             <p>
               I'm a&nbsp;
               <span
                 class="typed"
-                data-typed-items="Developer, Tabla Player, Gamer"
+                data-typed-items="Software Engineering Student"
               >
                 <Typed
-                  strings={["Developer", "Tabla Player", "Gamer"]}
+                  strings={["Software Engineering Student"]}
                   loop
                   typeSpeed={90}
                   backSpeed={60}
@@ -37,35 +37,17 @@ export default function Hero() {
               </span>
             </p>
             <div class="social-links">
-              <a href="https://www.youtube.com/channel/UC8TXgNmZW2hMis074yGOTUQ">
-                <i class="bx bxl-youtube"></i>
-              </a>
               <a href="https://www.instagram.com/bhushan_borole_/">
                 <i class="bx bxl-instagram"></i>
               </a>
-              <a href="https://github.com/bhushan-borole">
+              <a href="https://github.com/twangpodorji">
                 <i class="bx bxl-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/bhushan-borole/">
-                <i class="bx bxl-linkedin"></i>
-              </a>
-              <a href="mailto:borolebhushan8@gmail.com">
+              <a href="mailto:tsheringwangpodorji@gmail.com">
                 <i class="bx bx-envelope"></i>
               </a>
             </div>
             <br />
-            <Button
-              variant="outlined"
-              target="_blank"
-              href="https://drive.google.com/file/d/1XVfSZNcC6P9QlmEgA3s1Ebi23kydQGYj/view?usp=sharing"
-              startIcon={<CloudDownloadIcon />}
-              style={{
-                color: "rgb(116, 128, 138)",
-                borderColor: "rgb(116, 128, 138)",
-              }}
-            >
-              Download Resume
-            </Button>
           </Col>
           <Col
             lg={6}

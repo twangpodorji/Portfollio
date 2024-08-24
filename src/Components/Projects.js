@@ -15,16 +15,9 @@ import RemoveIcon from "@material-ui/icons/Remove";
 const Projects = () => {
   const items = [
     {
-      cardTitle: "Nuharc - Smart City Disaster Report App",
+      cardTitle: "Bubble Sheet Detection (Basic)",
       cardDetailedText: [
-        "App to simulate disasters in Dublin.",
-        "Realtime traffic reporting upto 300ms latency.",
-        "Combines different velocity data streams to give a 99.9% accurate data.",
-        "Real time changes of disasters and re-routing of current users using sockets implementation.",
-        "All Emergency services directed towards the disaster as soon as someone reports.",
-        "Entire application is running in a dockerized container and hosted in Azure VM.",
-        "From scratch implementation of Load Balancing Algorithm (Weighted Round Robin) with Healthchecks.",
-        "All data is stored in NoSQL MongoDB.",
+        "Implementation of Deep Learning that can detect the bubbles in the OMR sheet and calculate the score.",
       ].map(function (text) {
         return <li>{text}</li>;
       }),
@@ -141,7 +134,7 @@ const Projects = () => {
   };
 
   const addButton = () => (
-    <Fab color="primary" color="blue" aria-label="add">
+    <Fab color="primary" aria-label="add">
       <AddIcon />
     </Fab>
   );
