@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.b66a43f2.css",
+    "main.js": "/my-portfolio/static/js/main.53509a6f.js",
+    "static/js/453.ae0f8b99.chunk.js": "/my-portfolio/static/js/453.ae0f8b99.chunk.js",
+    "static/media/boxicons.svg": "/my-portfolio/static/media/boxicons.045b05bf2dc119267a90.svg",
+    "static/media/wangpo_2.jpeg": "/my-portfolio/static/media/wangpo_2.8416f419e84144cce2d8.jpeg",
+    "static/media/boxicons.eot": "/my-portfolio/static/media/boxicons.092b78589f3f53e60030.eot",
+    "static/media/boxicons.woff": "/my-portfolio/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
+    "static/media/boxicons.ttf": "/my-portfolio/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
+    "static/media/bootstrap-icons.woff?": "/my-portfolio/static/media/bootstrap-icons.7d38a25801cfc2e01be2.woff",
+    "static/media/boxicons.woff2": "/my-portfolio/static/media/boxicons.8d765747a5588f36ff61.woff2",
+    "static/media/bootstrap-icons.woff2?": "/my-portfolio/static/media/bootstrap-icons.01c9cc54aa4917872f00.woff2",
+    "static/media/profile.jpg": "/my-portfolio/static/media/profile.315566744398bbc37317.jpg",
+    "index.html": "/my-portfolio/index.html",
+    "main.b66a43f2.css.map": "/my-portfolio/static/css/main.b66a43f2.css.map",
+    "main.53509a6f.js.map": "/my-portfolio/static/js/main.53509a6f.js.map",
+    "453.ae0f8b99.chunk.js.map": "/my-portfolio/static/js/453.ae0f8b99.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b66a43f2.css",
+    "static/js/main.53509a6f.js"
+  ]
+}
