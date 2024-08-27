@@ -9,27 +9,22 @@ import StarIcon from "@material-ui/icons/Star";
 const Education = () => {
   const items = [
     {
-      cardTitle: "Trinity College Dublin",
-      cardSubtitle: "MSc - Intelligent Systems",
-      coursesHead: "Courses: ",
+      cardTitle: "Collage Of Science And Technology",
+      cardSubtitle: "B.Sc. in Software Engineering (2nd Year).",
+      coursesHead: "Courses So Far: ",
       cardDetailedText: [
-        "Machine Learning",
-        "Information Retrieval and Web Search",
-        "Data Analytics",
-        "Knowledge and Data Engineering",
+        "Computer Science Fundamentals (CSF101)",
+        "Data Science Fundamentals (DSF101)",
+        "UI/UX Design - User Interface / User Experience Design (SDA101)",
+        "Web Development - Frontend Development (WEB101)",
+        "Web Development - Backend Development (WEB102)",
+        "AI - Deep Learning (DAM101)",
         "Advanced Software Engineering",
-        "Artificial Intelligence",
-        "Text Analytics",
+        "Database Management Systems (DBS101)",
       ].map(function (course) {
         return <li>{course}</li>;
       }),
-      date: "2021 - 2022",
-    },
-    {
-      cardTitle: "St. Francis Institute Of Technology",
-      cardSubtitle: "BE in Computer Engineering",
-      cardDetailedText: "CGPA: 8.72 (First class with Distinction)",
-      date: "2016 - 2020",
+      date: "2023 - 2024",
     },
   ];
 

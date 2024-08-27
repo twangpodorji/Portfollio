@@ -17,101 +17,43 @@ const Projects = () => {
     {
       cardTitle: "Bubble Sheet Detection (Basic)",
       cardDetailedText: [
-        "Implementation of Deep Learning that can detect the bubbles in the OMR sheet and calculate the score.",
+        "Developed a basic Neural Network model for detecting and analyzing bubble sheets used in examinations.",
+        "key achivement: Detecting student number from the bubble sheet and automated scoring answers sheets achiving an accuracy of 60%.",
       ].map(function (text) {
         return <li>{text}</li>;
       }),
-      technologies: ["MongoDB", "Express JS", "React JS", "Node JS"],
+      technologies: ["Google Colab", "Pytorch", "OCR", "OMR"],
+      links: [],
+    },
+    {
+      cardTitle: "Instagram Clone (Basic)",
+      cardDetailedText: [
+        "Developed a basic Instagram frontend clone using React framework.",
+        "Developed the backend using Hono and Prisma ORM for the bacsic CRUD operations. (Work in Progress)",
+      ].map(function (text) {
+        return <li>{text}</li>;
+      }),
+      technologies: ["React ", "Tailwind & Chakara CSS", "Hono", "Prisma ORM"],
       links: [
         {
-          url: "https://github.com/TCD-ASE-6/Nuharc",
-          text: "View Source Code",
+          url: "https://github.com/Norbu-d/Final-Frontend.git",
+          text: "View Source Code (Frontend)",
         },
       ],
     },
     {
-      cardTitle: "Woyse - A Multilingual Entity Recognition System",
+      cardTitle: "Pokedex",
       cardDetailedText: [
-        "Build an end-to-end intent and entity recognition microservice in Django.",
-        "Built using Python as a main stack, and used Tornado for socket connection.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["Python", "Django", "Rasa"],
-      links: [],
-    },
-    {
-      cardTitle: "Limitless File Sharing App",
-      cardDetailedText: [
-        "App that allows you to share ANY amount of data from one system to another.",
-        "The file is encoded using base64, then it is split into chunks and uploaded to Google Sheets. While downloading the serial order is maintained and it is decoded at client’s end.",
+        "Builted a functional web application using HTML, CSS and Vanilla JavaScript to interact with a specified PokeAPI.",
+        "Utilized Dom api, Node Js framework",
       ].map(function (text) {
         return <li>{text}</li>;
       }),
       technologies: ["Python", "Flask", "API"],
       links: [
         {
-          url: "https://github.com/vinay-deshmukh/Limitless-Client",
-          text: "View Source Code",
-        },
-      ],
-    },
-    {
-      cardTitle: "Finance Assistant Chatbot",
-      cardDetailedText: [
-        "Created a chatbot for Fin-tech companies for helping students regarding finances.",
-        "Tech stack comprises of Django, Rasa NLU and Postgresql.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["Python", "Django", "Rasa"],
-      links: [
-        {
-          url: "https://github.com/Sitanshuk/HackPython",
-          text: "View Source Code",
-        },
-      ],
-    },
-    {
-      cardTitle: "Text Summarization",
-      cardDetailedText: [
-        "It summarizes the given text into number of sentences or words in English and Punjabi.",
-        "Created in Flask and deployed on Google App Engine.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["Python", "GCP"],
-      links: [
-        {
-          url: "https://github.com/bhushan-borole/text-summarization",
-          text: "View Source Code",
-        },
-      ],
-    },
-    {
-      cardTitle: "Meeting App",
-      cardDetailedText:
-        "This project was created while I was working as a Full Stack Developer Intern. Created API's using Spring Boot and used the MVC architecture, and consumed these API's in the frontend.",
-      technologies: ["HTML", "CSS", "JS", "PHP"],
-      links: [
-        {
-          url: "https://github.com/bhushan-borole/meeting-app",
-          text: "View Source Code",
-        },
-      ],
-    },
-    {
-      cardTitle: "Justalk",
-      cardDetailedText: "A chat application made using React and Firebase Auth",
-      technologies: ["React JS", "Firebase"],
-      links: [
-        {
-          url: "https://github.com/bhushan-borole/justalk",
-          text: "View Source Code",
-        },
-        {
-          url: "https://bhushan-borole.github.io/justalk/",
-          text: "View Demo",
+          url: "https://web101-cap1-1-0ajw.onrender.com/",
+          text: "View Pokedex",
         },
       ],
     },

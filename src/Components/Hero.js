@@ -37,14 +37,11 @@ export default function Hero() {
               </span>
             </p>
             <div class="social-links">
-              <a href="https://www.instagram.com/bhushan_borole_/">
-                <i class="bx bxl-instagram"></i>
-              </a>
               <a href="https://github.com/twangpodorji">
                 <i class="bx bxl-github"></i>
               </a>
               <a href="mailto:tsheringwangpodorji@gmail.com">
-                <i class="bx bx-envelope"></i>
+                <i class="bx bx-envelope"></i>    
               </a>
             </div>
             <br />

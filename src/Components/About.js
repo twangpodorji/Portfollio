@@ -10,7 +10,6 @@ export default function About() {
         <div class="section-title">
           <h2>About Me</h2>
         </div>
-
         <Row>
           <Col lg={4} className="d-flex justify-content-center">
             <img
@@ -25,13 +24,13 @@ export default function About() {
             <h3>Software Engineering Student.</h3>
             <br></br>
             <p style={{ color: "#728394" }}>
-              I am a Software Engineering student at Collage of Science and
+              I am a Software Engineering student at the College of Science and
               Technology.
             </p>
             <br></br>
             <p style={{ color: "#728394" }}>
-              I am in the way towareds the programming and implementing it in
-              the real field.
+              I am passionate about programming and eager to apply my skills in
+              real-world scenarios.
             </p>
             <br></br>
             <Row>
