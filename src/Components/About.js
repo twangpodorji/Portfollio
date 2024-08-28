@@ -38,7 +38,7 @@ export default function About() {
                 <ul>
                   <li>
                     <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>{" "}
-                    <span>17263253</span>
+                    <span>+97517263253</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i>{" "}
