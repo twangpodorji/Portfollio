@@ -1,4 +1,4 @@
-import img from "./images/profile.jpg";
+import img1 from "./images/profile.jpg";
 import Typed from "react-typed";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -56,7 +56,7 @@ export default function Hero() {
             }}
           >
             <img
-              src={img}
+              src={img1}
               height="100%"
               width="65%"
               style={{
