@@ -18,10 +18,8 @@ const Projects = () => {
       cardTitle: "Bubble Sheet Detection (Basic)",
       cardDetailedText: [
         "Developed a basic Neural Network model for detecting and analyzing bubble sheets used in examinations.",
-        "key achivement: Detecting student number from the bubble sheet and automated scoring answers sheets achiving an accuracy of 60%.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
+        "Key achievement: Detecting student number from the bubble sheet and automated scoring answers sheets achieving an accuracy of 60%.",
+      ].map((text) => <li key={text}>{text}</li>),
       technologies: ["Google Colab", "Pytorch", "OCR", "OMR"],
       links: [],
     },
@@ -29,11 +27,9 @@ const Projects = () => {
       cardTitle: "Instagram Clone (Basic)",
       cardDetailedText: [
         "Developed a basic Instagram frontend clone using React framework.",
-        "Developed the backend using Hono and Prisma ORM for the bacsic CRUD operations. (Work in Progress)",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["React ", "Tailwind & Chakara CSS", "Hono", "Prisma ORM"],
+        "Developed the backend using Hono and Prisma ORM for the basic CRUD operations. (Work in Progress)",
+      ].map((text) => <li key={text}>{text}</li>),
+      technologies: ["React", "Tailwind & Chakra CSS", "Hono", "Prisma ORM"],
       links: [
         {
           url: "https://github.com/Norbu-d/Final-Frontend.git",
@@ -44,11 +40,9 @@ const Projects = () => {
     {
       cardTitle: "Pokedex",
       cardDetailedText: [
-        "Builted a functional web application using HTML, CSS and Vanilla JavaScript to interact with a specified PokeAPI.",
-        "Utilized Dom api, Node Js framework",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
+        "Built a functional web application using HTML, CSS, and Vanilla JavaScript to interact with a specified PokeAPI.",
+        "Utilized DOM API, Node.js framework",
+      ].map((text) => <li key={text}>{text}</li>),
       technologies: ["Python", "Flask", "API"],
       links: [
         {
@@ -75,20 +69,14 @@ const Projects = () => {
     setLessButton(false);
   };
 
-  const addButton = () => (
-    <Fab color="primary" aria-label="add">
-      <AddIcon />
-    </Fab>
-  );
-
   return (
-    <section id="projects" class="about background-alt">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
+    <section id="projects" className="about background-alt">
+      <div className="container" data-aos="fade-up">
+        <div className="section-title">
           <h2>Projects</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
+        <div className="row">
+          <div className="col-lg-12 d-flex justify-content-center">
             <VerticalTimeline className="custom-line">
               {items.slice(0, limit).map((data, i) => (
                 <VerticalTimelineElement
@@ -97,7 +85,7 @@ const Projects = () => {
                   contentStyle={{ background: "#343a40" }}
                   dateClassName="timeline-date"
                   contentArrowStyle={{
-                    borderRight: "7px solid  rgb(33, 150, 243)",
+                    borderRight: "7px solid rgb(33, 150, 243)",
                   }}
                   icon={<CodeIcon />}
                   iconStyle={{
@@ -107,13 +95,13 @@ const Projects = () => {
                 >
                   <div className="projects-technologies">
                     {data.technologies.map((name, i) => (
-                      <Chip key={i} label={name}></Chip>
+                      <Chip key={i} label={name} />
                     ))}
                   </div>
                   <h3
                     className="vertical-timeline-element-title"
                     style={{
-                      fontSize: "12",
+                      fontSize: "12px",
                       color: "rgba(255, 255, 255, 0.8)",
                     }}
                   >
@@ -130,10 +118,9 @@ const Projects = () => {
                   </p>
                   <div className="project-links">
                     {data.links.map((link, j) => (
-                      <div>
-                        <br></br>
+                      <div key={j}>
+                        <br />
                         <Button
-                          key={j} // eslint-disable-line react/no-array-index-key
                           variant="contained"
                           color="default"
                           target="_blank"
@@ -171,7 +158,7 @@ const Projects = () => {
                   iconOnClick={loadLess}
                   iconClassName="d-flex justify-content-center"
                   icon={
-                    <IconButton aria-label="add">
+                    <IconButton aria-label="remove">
                       <RemoveIcon
                         style={{
                           color: "#fff",

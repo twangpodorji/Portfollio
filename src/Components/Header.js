@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SchoolIcon from "@material-ui/icons/School";
 
 class Header extends React.Component {
