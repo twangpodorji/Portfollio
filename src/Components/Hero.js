@@ -1,10 +1,8 @@
-import img1 from "./images/profile.jpg";
+import img from "./images/profile.jpg";
 import Typed from "react-typed";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "@material-ui/core/Button";
-import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
 
 export default function Hero() {
   return (
@@ -41,7 +39,7 @@ export default function Hero() {
                 <i class="bx bxl-github"></i>
               </a>
               <a href="mailto:tsheringwangpodorji@gmail.com">
-                <i class="bx bx-envelope"></i>    
+                <i class="bx bx-envelope"></i>
               </a>
             </div>
             <br />
@@ -56,7 +54,8 @@ export default function Hero() {
             }}
           >
             <img
-              src={img1}
+              src={img}
+              alt="profile"
               height="100%"
               width="65%"
               style={{
