@@ -1,5 +1,5 @@
+import React, { useState } from "react";
 import Chip from "@material-ui/core/Chip";
-import Fab from "@material-ui/core/Fab";
 import Button from "@material-ui/core/Button";
 import AddIcon from "@material-ui/icons/Add";
 import {
@@ -7,7 +7,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { useState } from "react";
 import CodeIcon from "@material-ui/icons/Code";
 import IconButton from "@material-ui/core/IconButton";
 import RemoveIcon from "@material-ui/icons/Remove";
@@ -19,7 +18,7 @@ const Projects = () => {
       cardDetailedText: [
         "Developed a basic Neural Network model for detecting and analyzing bubble sheets used in examinations.",
         "Key achievement: Detecting student number from the bubble sheet and automated scoring answers sheets achieving an accuracy of 60%.",
-      ].map((text) => <li key={text}>{text}</li>),
+      ],
       technologies: ["Google Colab", "Pytorch", "OCR", "OMR"],
       links: [],
     },
@@ -28,7 +27,7 @@ const Projects = () => {
       cardDetailedText: [
         "Developed a basic Instagram frontend clone using React framework.",
         "Developed the backend using Hono and Prisma ORM for the basic CRUD operations. (Work in Progress)",
-      ].map((text) => <li key={text}>{text}</li>),
+      ],
       technologies: ["React", "Tailwind & Chakra CSS", "Hono", "Prisma ORM"],
       links: [
         {
@@ -42,7 +41,7 @@ const Projects = () => {
       cardDetailedText: [
         "Built a functional web application using HTML, CSS, and Vanilla JavaScript to interact with a specified PokeAPI.",
         "Utilized DOM API, Node.js framework",
-      ].map((text) => <li key={text}>{text}</li>),
+      ],
       technologies: ["Python", "Flask", "API"],
       links: [
         {
@@ -94,8 +93,8 @@ const Projects = () => {
                   }}
                 >
                   <div className="projects-technologies">
-                    {data.technologies.map((name, i) => (
-                      <Chip key={i} label={name} />
+                    {data.technologies.map((name, index) => (
+                      <Chip key={index} label={name} />
                     ))}
                   </div>
                   <h3
@@ -107,15 +106,13 @@ const Projects = () => {
                   >
                     {data.cardTitle}
                   </h3>
-                  <p
-                    style={{
-                      fontSize: "1em",
-                      fontWeight: "350",
-                      color: "#74808a",
-                    }}
-                  >
-                    {data.cardDetailedText}
-                  </p>
+                  <ul style={{ color: "#74808a" }}>
+                    {data.cardDetailedText.map((text, index) => (
+                      <li key={index} style={{ fontSize: "1em", fontWeight: "350" }}>
+                        {text}
+                      </li>
+                    ))}
+                  </ul>
                   <div className="project-links">
                     {data.links.map((link, j) => (
                       <div key={j}>

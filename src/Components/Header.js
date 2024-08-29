@@ -4,52 +4,42 @@ import SchoolIcon from "@material-ui/icons/School";
 class Header extends React.Component {
   constructor() {
     super();
-    this.scrollto.bind(this);
-    this.select.bind(this);
+    // No need to bind methods here if using arrow functions
   }
 
   componentDidMount() {
     window.addEventListener("load", this.navbarlinksActive);
     this.onscroll(document, this.navbarlinksActive);
 
-    this.on("click", ".mobile-nav-toggle", function (e) {
+    this.on("click", ".mobile-nav-toggle", (e) => {
       document.querySelector("body").classList.toggle("mobile-nav-active");
-      this.classList.toggle("bi-list");
-      this.classList.toggle("bi-x");
+      e.currentTarget.classList.toggle("bi-list");
+      e.currentTarget.classList.toggle("bi-x");
     });
 
-    this.on(
-      "click",
-      ".scrollto",
-      function (e) {
-        if (document.querySelector(this.hash)) {
-          e.preventDefault();
+    this.on("click", ".scrollto", (e) => {
+      if (document.querySelector(e.currentTarget.hash)) {
+        e.preventDefault();
 
-          let body = document.querySelector("body");
-          if (body.classList.contains("mobile-nav-active")) {
-            body.classList.remove("mobile-nav-active");
-            let navbarToggle = document.querySelector(".mobile-nav-toggle");
-            navbarToggle.classList.toggle("bi-list");
-            navbarToggle.classList.toggle("bi-x");
-          }
-          let elementPos = document.querySelector(this.hash).offsetTop;
-          window.scrollTo({
-            top: elementPos,
-            behavior: "smooth",
-          });
+        let body = document.querySelector("body");
+        if (body.classList.contains("mobile-nav-active")) {
+          body.classList.remove("mobile-nav-active");
+          let navbarToggle = document.querySelector(".mobile-nav-toggle");
+          navbarToggle.classList.toggle("bi-list");
+          navbarToggle.classList.toggle("bi-x");
         }
-      },
-      true
-    );
+        let elementPos = document.querySelector(e.currentTarget.hash).offsetTop;
+        window.scrollTo({
+          top: elementPos,
+          behavior: "smooth",
+        });
+      }
+    }, true);
   }
 
   select = (el, all = false) => {
     el = el.trim();
-    if (all) {
-      return [...document.querySelectorAll(el)];
-    } else {
-      return document.querySelector(el);
-    }
+    return all ? [...document.querySelectorAll(el)] : document.querySelector(el);
   };
 
   on = (type, el, listener, all = false) => {
@@ -67,13 +57,13 @@ class Header extends React.Component {
     el.addEventListener("scroll", listener);
   };
 
-  scrollto(el) {
+  scrollto = (el) => {
     let elementPos = document.querySelector(el).offsetTop;
     window.scrollTo({
       top: elementPos,
       behavior: "smooth",
     });
-  }
+  };
 
   navbarlinksActive = () => {
     let navbarlinks = document.querySelectorAll("#navbar .scrollto");
@@ -97,7 +87,7 @@ class Header extends React.Component {
     return (
       <div>
         <i
-          class="bi bi-list mobile-nav-toggle d-xl-none"
+          className="bi bi-list mobile-nav-toggle d-xl-none"
           style={{ color: "rgb(114, 131, 148)" }}
         ></i>
         <header
@@ -111,7 +101,7 @@ class Header extends React.Component {
                   href="#hero"
                   className="nav-link scrollto active d-flex justify-content-center"
                 >
-                  <i class="bx bx-home"></i>
+                  <i className="bx bx-home"></i>
                   <span>Home</span>
                 </a>
               </li>
@@ -120,15 +110,14 @@ class Header extends React.Component {
                   href="#about"
                   className="nav-link scrollto d-flex justify-content-center"
                 >
-                  <i class="bx bx-user"></i>
+                  <i className="bx bx-user"></i>
                   <span>About</span>
                 </a>
               </li>
-
               <li>
                 <a
                   href="#projects"
-                  class="nav-link scrollto d-flex justify-content-center"
+                  className="nav-link scrollto d-flex justify-content-center"
                 >
                   <i className="bx bx-code"></i>
                   <span>Projects</span>
@@ -137,7 +126,7 @@ class Header extends React.Component {
               <li>
                 <a
                   href="#education"
-                  class="nav-link scrollto d-flex justify-content-center"
+                  className="nav-link scrollto d-flex justify-content-center"
                 >
                   <SchoolIcon />
                   <span>Education</span>
