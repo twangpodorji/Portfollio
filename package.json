@@ -1,7 +1,7 @@
 {
-  "homepage": "https://twangpodorji.github.io/my-portfolio",
   "name": "my-portfolio",
   "version": "0.1.0",
+  "homepage": "https://twangpodorji.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.2.5",
