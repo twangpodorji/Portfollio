@@ -2,11 +2,6 @@ import React from "react";
 import SchoolIcon from "@material-ui/icons/School";
 
 class Header extends React.Component {
-  constructor() {
-    super();
-    // No need to bind methods here if using arrow functions
-  }
-
   componentDidMount() {
     window.addEventListener("load", this.navbarlinksActive);
     this.onscroll(document, this.navbarlinksActive);
