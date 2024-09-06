@@ -12,29 +12,38 @@ class Header extends React.Component {
       e.currentTarget.classList.toggle("bi-x");
     });
 
-    this.on("click", ".scrollto", (e) => {
-      if (document.querySelector(e.currentTarget.hash)) {
-        e.preventDefault();
+    this.on(
+      "click",
+      ".scrollto",
+      (e) => {
+        if (document.querySelector(e.currentTarget.hash)) {
+          e.preventDefault();
 
-        let body = document.querySelector("body");
-        if (body.classList.contains("mobile-nav-active")) {
-          body.classList.remove("mobile-nav-active");
-          let navbarToggle = document.querySelector(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
+          let body = document.querySelector("body");
+          if (body.classList.contains("mobile-nav-active")) {
+            body.classList.remove("mobile-nav-active");
+            let navbarToggle = document.querySelector(".mobile-nav-toggle");
+            navbarToggle.classList.toggle("bi-list");
+            navbarToggle.classList.toggle("bi-x");
+          }
+          let elementPos = document.querySelector(
+            e.currentTarget.hash
+          ).offsetTop;
+          window.scrollTo({
+            top: elementPos,
+            behavior: "smooth",
+          });
         }
-        let elementPos = document.querySelector(e.currentTarget.hash).offsetTop;
-        window.scrollTo({
-          top: elementPos,
-          behavior: "smooth",
-        });
-      }
-    }, true);
+      },
+      true
+    );
   }
 
   select = (el, all = false) => {
     el = el.trim();
-    return all ? [...document.querySelectorAll(el)] : document.querySelector(el);
+    return all
+      ? [...document.querySelectorAll(el)]
+      : document.querySelector(el);
   };
 
   on = (type, el, listener, all = false) => {

@@ -108,7 +108,10 @@ const Projects = () => {
                   </h3>
                   <ul style={{ color: "#74808a" }}>
                     {data.cardDetailedText.map((text, index) => (
-                      <li key={index} style={{ fontSize: "1em", fontWeight: "350" }}>
+                      <li
+                        key={index}
+                        style={{ fontSize: "1em", fontWeight: "350" }}
+                      >
                         {text}
                       </li>
                     ))}

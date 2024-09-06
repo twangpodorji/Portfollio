@@ -21,7 +21,7 @@ const Education = () => {
         "AI - Deep Learning (DAM101)",
         "Database Management Systems (DBS101)",
       ].map(function (course) {
-        return  <li>{course}</li>;
+        return <li>{course}</li>;
       }),
       date: "2023 - 2024",
     },

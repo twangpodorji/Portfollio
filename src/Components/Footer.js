@@ -7,19 +7,19 @@ const Footer = () => {
             <i class="bx bxl-github"></i>
           </a>
           <a href="mailto:tsheringwangpodorji@gmail.com">
-            <i class="bx bx-envelope"></i> 
-          </a> 
-        </div> 
-        <div class="credits" style={{ color: "#74808a" }}> 
-          Made with <span style={{ color: "#e25555" }}>&hearts;</span> using 
-          React 
-        </div> 
+            <i class="bx bx-envelope"></i>
+          </a>
+        </div>
         <div class="credits" style={{ color: "#74808a" }}>
-          Referred from {"Bushan Borole"} 
-        </div> 
-      </div> 
-    </footer>  
+          Made with <span style={{ color: "#e25555" }}>&hearts;</span> using
+          React
+        </div>
+        <div class="credits" style={{ color: "#74808a" }}>
+          Referred from {"Bushan Borole"}
+        </div>
+      </div>
+    </footer>
   );
 };
 
-export default Footer; 
+export default Footer;
