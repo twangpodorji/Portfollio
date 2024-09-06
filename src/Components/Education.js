@@ -10,7 +10,7 @@ const Education = () => {
   const items = [
     {
       cardTitle: "Collage Of Science And Technology",
-      cardSubtitle: "B.Sc. in Software Engineering (2nd Year).",
+      cardSubtitle: "BSc. in Software Engineering (2nd Year/ I Semester).",
       coursesHead: "Courses So Far: ",
       cardDetailedText: [
         "Computer Science Fundamentals (CSF101)",
@@ -19,10 +19,9 @@ const Education = () => {
         "Web Development - Frontend Development (WEB101)",
         "Web Development - Backend Development (WEB102)",
         "AI - Deep Learning (DAM101)",
-        "Advanced Software Engineering",
         "Database Management Systems (DBS101)",
       ].map(function (course) {
-        return <li>{course}</li>;
+        return  <li>{course}</li>;
       }),
       date: "2023 - 2024",
     },

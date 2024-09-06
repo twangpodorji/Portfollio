@@ -6,7 +6,7 @@ const Skills = () => {
     "Python",
     "Machine Learning",
     "Deep Learning",
-    "MySQL",
+    "PostgreSQL",
     "MongoDB (Basic)",
     "React (Basic)",
     "Hono & Express (Basic)",
